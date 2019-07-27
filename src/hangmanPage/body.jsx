@@ -61,7 +61,7 @@ export class HangmanBody extends React.Component {
 
   renderImg() {
     return (
-      <img src={`${process.env.PUBLIC_URL}/img/${this.state.failure}.png`} />
+      <img src={`${process.env.PUBLIC_URL}/img/${this.state.failure}.png`} alt='' />
     );
   }
 

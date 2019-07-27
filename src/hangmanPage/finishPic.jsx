@@ -1,10 +1,6 @@
 import React from 'react';
 
 export class FinishPic extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   onClickAgain = () => {
     window.location.reload();
   };
@@ -12,7 +8,7 @@ export class FinishPic extends React.Component {
   failPic() {
     return (
       <div style={styles.finishPicContainer}>
-        <img src={`${process.env.PUBLIC_URL}/img/shit_symbol.png`} />
+        <img src={`${process.env.PUBLIC_URL}/img/shit_symbol.png`} alt='' />
         <div style={styles.finishText}>
           <div>shit</div>
           <div>you</div>
@@ -27,7 +23,7 @@ export class FinishPic extends React.Component {
   succussPic() {
     return (
       <div style={styles.finishPicContainer}>
-        <img src={`${process.env.PUBLIC_URL}/img/yes_symbol.png`} />
+        <img src={`${process.env.PUBLIC_URL}/img/yes_symbol.png`} alt='' />
         <div style={{ ...styles.finishText, color: 'rgb(113, 225, 142)' }}>
           <div>you</div>
           <div>did</div>

@@ -1,9 +1,6 @@
 import React from 'react';
 
 export class LettersBank extends React.Component {
-  constructor(props) {
-    super(props);
-  }
   renderFirstRowKeyboard() {
     const firstRow = this.props.letters.slice(0, 10).map(letter => {
       return (
