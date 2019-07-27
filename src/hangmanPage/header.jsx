@@ -24,7 +24,6 @@ const styles = {
     color: 'white',
     padding: ('0  10px  0 10px'),
     borderRadius: 15,
-    margin:  (10),
   },
   circle: {
     backgroundColor: 'white',

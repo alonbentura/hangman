@@ -29,7 +29,7 @@ export class FinishPic extends React.Component {
       <div style={styles.finishPicContainer}>
         <img src={`${process.env.PUBLIC_URL}/img/yes_symbol.png`} />
         <div style={{ ...styles.finishText, color: 'rgb(113, 225, 142)' }}>
-          ><div>you</div>
+          <div>you</div>
           <div>did</div>
           <div>it</div>
         </div>
@@ -77,11 +77,13 @@ const styles = {
     fontSize: 42,
     fontWeight: 'bold',
     borderRadius: 15,
+    cursor:'pointer'
   },
   finishPicContainer: {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
+    marginLeft: 10
   },
   finishText: {
     fontSize: 80,

@@ -30,8 +30,9 @@ export class HangmanBody extends React.Component {
 
   generateAnswer() {
     const randomLetters = new Array(movieLetters.length).fill('');
+    const numOfLoops = Math.floor(movieLetters.length * 0.25);
     this.setState({ randomLetters }, () => {
-      for (let i = 0; i < 4; i++) {
+      for (let i = 0; i < numOfLoops; i++) {
         const index = Math.floor(Math.random() * movieLetters.length); // the random index that chosen
         const draftedLetter = movieLetters[index];
 
